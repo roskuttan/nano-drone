@@ -1,0 +1,364 @@
+(kicad_sch
+	(version 20250610)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "25b0d3b0-3cb9-423d-be12-0958a248a2dc")
+	(paper "A4")
+	(title_block
+		(title "Nano drone FC + 4x ESC + ELRS radio")
+		(date "2026-11-09")
+		(rev "0.2")
+		(company "")
+	)
+	(lib_symbols)
+	(sheet
+		(at 25.4 38.1)
+		(size 50.8 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "bb656958-f522-4172-94e2-6e505f68f081")
+		(property "Sheetname" "Power"
+			(at 25.4 37.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 25.4 54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "nanodrone"
+				(path "/25b0d3b0-3cb9-423d-be12-0958a248a2dc"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 88.9 38.1)
+		(size 50.8 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "702ef2a6-432a-4daa-9377-0bd3525735e5")
+		(property "Sheetname" "Flight controller STM32G431"
+			(at 88.9 37.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "mcu.kicad_sch"
+			(at 88.9 54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "nanodrone"
+				(path "/25b0d3b0-3cb9-423d-be12-0958a248a2dc"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 152.4 38.1)
+		(size 50.8 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "755c8e85-5919-4fa0-a17d-5f51551f244d")
+		(property "Sheetname" "IMU LSM6DSV16X"
+			(at 152.4 37.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "imu.kicad_sch"
+			(at 152.4 54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "nanodrone"
+				(path "/25b0d3b0-3cb9-423d-be12-0958a248a2dc"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 215.9 38.1)
+		(size 50.8 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5702411e-ca6f-41b2-99b8-13935dd5b657")
+		(property "Sheetname" "Radio SX1280"
+			(at 215.9 37.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "radio.kicad_sch"
+			(at 215.9 54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "nanodrone"
+				(path "/25b0d3b0-3cb9-423d-be12-0958a248a2dc"
+					(page "5")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 25.4 68.58)
+		(size 50.8 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f2cd173e-49e8-43c4-87c5-0219df4251ef")
+		(property "Sheetname" "Motor 1 ESC"
+			(at 25.4 67.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "motor1.kicad_sch"
+			(at 25.4 84.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "nanodrone"
+				(path "/25b0d3b0-3cb9-423d-be12-0958a248a2dc"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 88.9 68.58)
+		(size 50.8 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "d2035110-97bb-4e65-ab2d-5102f4c5716b")
+		(property "Sheetname" "Motor 2 ESC"
+			(at 88.9 67.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "motor2.kicad_sch"
+			(at 88.9 84.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "nanodrone"
+				(path "/25b0d3b0-3cb9-423d-be12-0958a248a2dc"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 152.4 68.58)
+		(size 50.8 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "562481ef-63f1-4f1c-a5fd-53447f0f1866")
+		(property "Sheetname" "Motor 3 ESC"
+			(at 152.4 67.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "motor3.kicad_sch"
+			(at 152.4 84.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "nanodrone"
+				(path "/25b0d3b0-3cb9-423d-be12-0958a248a2dc"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 215.9 68.58)
+		(size 50.8 15.24)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "9e45c4da-5630-4485-a615-b4a6acf086fc")
+		(property "Sheetname" "Motor 4 ESC"
+			(at 215.9 67.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "motor4.kicad_sch"
+			(at 215.9 84.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "nanodrone"
+				(path "/25b0d3b0-3cb9-423d-be12-0958a248a2dc"
+					(page "9")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

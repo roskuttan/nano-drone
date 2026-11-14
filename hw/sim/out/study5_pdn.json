@@ -1,0 +1,167 @@
+{
+  "a_3v0": {
+    "targets_ohm": {
+      "1pct": 0.4411764705882352,
+      "3pct": 1.3235294117647058,
+      "step_A": {
+        "RADIO": 0.048,
+        "FC": 0.02
+      }
+    },
+    "impedance": {
+      "LDO": {
+        "Zmax_below_20MHz_ohm": 0.46688954944508104,
+        "f_at_Zmax_Hz": 89031.00676216515,
+        "pass_3pct_target": true,
+        "pass_1pct_target": false
+      },
+      "FC": {
+        "Zmax_below_20MHz_ohm": 0.4693611017579504,
+        "f_at_Zmax_Hz": 89031.00676216515,
+        "pass_3pct_target": true,
+        "pass_1pct_target": false
+      },
+      "VDDA": {
+        "Zmax_below_20MHz_ohm": 2.8207134872055115,
+        "f_at_Zmax_Hz": 362771.38871342625,
+        "pass_3pct_target": false,
+        "pass_1pct_target": false
+      },
+      "RADIO": {
+        "Zmax_below_20MHz_ohm": 0.8391953243405362,
+        "f_at_Zmax_Hz": 88095.58187480769,
+        "pass_3pct_target": true,
+        "pass_1pct_target": false
+      },
+      "ESC1": {
+        "Zmax_below_20MHz_ohm": 0.4710067029977902,
+        "f_at_Zmax_Hz": 89031.00676216515,
+        "pass_3pct_target": true,
+        "pass_1pct_target": false
+      },
+      "ESC2": {
+        "Zmax_below_20MHz_ohm": 0.4710067029977901,
+        "f_at_Zmax_Hz": 89031.00676216515,
+        "pass_3pct_target": true,
+        "pass_1pct_target": false
+      },
+      "ESC3": {
+        "Zmax_below_20MHz_ohm": 0.47100670299779007,
+        "f_at_Zmax_Hz": 89031.00676216515,
+        "pass_3pct_target": true,
+        "pass_1pct_target": false
+      },
+      "ESC4": {
+        "Zmax_below_20MHz_ohm": 0.4710067029977902,
+        "f_at_Zmax_Hz": 89031.00676216515,
+        "pass_3pct_target": true,
+        "pass_1pct_target": false
+      },
+      "IMU": {
+        "Zmax_below_20MHz_ohm": 0.4723334726354048,
+        "f_at_Zmax_Hz": 89031.00676216515,
+        "pass_3pct_target": true,
+        "pass_1pct_target": false
+      }
+    },
+    "load_step": {
+      "LDO": {
+        "dV_min_mV": -12.612954417636113,
+        "dV_max_mV": 9.725056948091751,
+        "static_drop_mV": -3.70913539967379
+      },
+      "FC": {
+        "dV_min_mV": -12.658515903781327,
+        "dV_max_mV": 9.730618913306166,
+        "static_drop_mV": -3.7824353996737896
+      },
+      "VDDA": {
+        "dV_min_mV": -14.72130707044111,
+        "dV_max_mV": 11.793423660972039,
+        "static_drop_mV": -3.882435399673791
+      },
+      "RADIO": {
+        "dV_min_mV": -21.209444727962772,
+        "dV_max_mV": 13.376704482868854,
+        "static_drop_mV": -4.945135399673791
+      },
+      "ESC1": {
+        "dV_min_mV": -12.616495113146483,
+        "dV_max_mV": 9.72859875844662,
+        "static_drop_mV": -3.7479353996737896
+      },
+      "ESC2": {
+        "dV_min_mV": -12.616495113146485,
+        "dV_max_mV": 9.72859875844662,
+        "static_drop_mV": -3.7479353996737896
+      },
+      "ESC3": {
+        "dV_min_mV": -12.616495113146486,
+        "dV_max_mV": 9.72859875844662,
+        "static_drop_mV": -3.7479353996737905
+      },
+      "ESC4": {
+        "dV_min_mV": -12.616495113146485,
+        "dV_max_mV": 9.72859875844662,
+        "static_drop_mV": -3.7479353996737905
+      },
+      "IMU": {
+        "dV_min_mV": -12.659213363195317,
+        "dV_max_mV": 9.731315822163515,
+        "static_drop_mV": -3.78438539967379
+      }
+    },
+    "fc_to_vdda_transfer": {
+      "peak_gain": 5.567663669292666,
+      "f_peak_kHz": 333.37711183217897,
+      "atten_at_10MHz_dB": -62.09017075200301
+    },
+    "radio_ferrite_LC_resonance_kHz": 199.80406442732246
+  },
+  "b_vbat": {
+    "vbat_ripple": {
+      "hover": {
+        "duty": 0.42977846493324645,
+        "I_bus_avg_A": 0.5302867916250296,
+        "I_bus_ac_rms_A": 0.8284605219273953,
+        "vpp_D1_sync_plus_100uF_polymer_mV": 231.39733308512666,
+        "vpp_D1_sync_mV": 385.4892980917465,
+        "vpp_P_sync_mV": 375.6951823138938,
+        "vpp_D1_interleaved_mV": 47.608807306808565,
+        "vpp_D1_random_median_mV": 172.78521164620392,
+        "vpp_D1_random_p95_mV": 275.1031785027243,
+        "icap22_driver_rms_sync_A": 0.5144819624637725,
+        "icap22_pads_rms_sync_A": 0.5096913931900737,
+        "ldo_3v0_ripple_uV_at_60dB_PSRR": 375.6951823138938
+      },
+      "7 g/motor": {
+        "duty": 0.6003055255823846,
+        "I_bus_avg_A": 0.9025761955111298,
+        "I_bus_ac_rms_A": 0.9693599758173916,
+        "vpp_D1_sync_plus_100uF_polymer_mV": 257.70407896924274,
+        "vpp_D1_sync_mV": 443.46041891724553,
+        "vpp_P_sync_mV": 435.23344923639377,
+        "vpp_D1_interleaved_mV": 50.17767600781667,
+        "vpp_D1_random_median_mV": 201.87106397432254,
+        "vpp_D1_random_p95_mV": 354.204427198863,
+        "icap22_driver_rms_sync_A": 0.5710813724691126,
+        "icap22_pads_rms_sync_A": 0.5651500250482329,
+        "ldo_3v0_ripple_uV_at_60dB_PSRR": 435.2334492363938
+      },
+      "10 g/motor": {
+        "duty": 0.7959816383892485,
+        "I_bus_avg_A": 1.384287654628237,
+        "I_bus_ac_rms_A": 0.9142733770913872,
+        "vpp_D1_sync_plus_100uF_polymer_mV": 232.687303815112,
+        "vpp_D1_sync_mV": 407.2238956341393,
+        "vpp_P_sync_mV": 396.1065471741987,
+        "vpp_D1_interleaved_mV": 50.828604940549525,
+        "vpp_D1_random_median_mV": 194.58278575888005,
+        "vpp_D1_random_p95_mV": 337.4818300770315,
+        "icap22_driver_rms_sync_A": 0.5527979033672517,
+        "icap22_pads_rms_sync_A": 0.5468201342679924,
+        "ldo_3v0_ripple_uV_at_60dB_PSRR": 396.1065471741987
+      }
+    }
+  }
+}

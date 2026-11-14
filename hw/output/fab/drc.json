@@ -1,0 +1,1941 @@
+{
+    "$schema": "https://schemas.kicad.org/drc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-10T09:02:16",
+    "ignored_checks": [
+        {
+            "description": "Footprint has no courtyard defined",
+            "key": "missing_courtyard"
+        },
+        {
+            "description": "Track endpoint not centered on via",
+            "key": "track_not_centered_on_via"
+        },
+        {
+            "description": "Tuning profile track geometries",
+            "key": "tuning_profile_track_geometries"
+        },
+        {
+            "description": "Footprint doesn't match symbol's footprint filters",
+            "key": "footprint_filters_mismatch"
+        },
+        {
+            "description": "Silkscreen clearance",
+            "key": "silk_overlap"
+        },
+        {
+            "description": "Silkscreen clipped by solder mask",
+            "key": "silk_over_copper"
+        },
+        {
+            "description": "Silkscreen clipped by board edge",
+            "key": "silk_edge_clearance"
+        },
+        {
+            "description": "Text height out of range",
+            "key": "text_height"
+        },
+        {
+            "description": "Text thickness out of range",
+            "key": "text_thickness"
+        },
+        {
+            "description": "Footprint component type doesn't match footprint pads",
+            "key": "footprint_type_mismatch"
+        },
+        {
+            "description": "Footprint not found in libraries",
+            "key": "lib_footprint_issues"
+        },
+        {
+            "description": "Footprint doesn't match copy in library",
+            "key": "lib_footprint_mismatch"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "schematic_parity": [
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C1",
+                    "pos": {
+                        "x": 107.196093,
+                        "y": 101.70715
+                    },
+                    "uuid": "a881e7b5-d8db-4e10-9de8-6dcd8ea88d2b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C2",
+                    "pos": {
+                        "x": 109.372973,
+                        "y": 102.93609
+                    },
+                    "uuid": "c53f5653-7c3e-4623-9fd4-d1fdc9ddc0d3"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C3",
+                    "pos": {
+                        "x": 107.531177,
+                        "y": 100.575
+                    },
+                    "uuid": "7d693a12-3a87-4004-830a-e251996c8ac9"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C4",
+                    "pos": {
+                        "x": 106.02897,
+                        "y": 100.2037
+                    },
+                    "uuid": "69e9ce26-cd36-4098-ba55-525c71afebcc"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C5",
+                    "pos": {
+                        "x": 107.760568,
+                        "y": 98.373804
+                    },
+                    "uuid": "4bb63fd1-4dd2-42f0-8192-34cbad71d2f1"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)')",
+            "items": [
+                {
+                    "description": "Footprint J1",
+                    "pos": {
+                        "x": 109.6,
+                        "y": 100.0
+                    },
+                    "uuid": "344c3297-0ffa-4ec0-b4f5-7f7f45b21ee5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R1",
+                    "pos": {
+                        "x": 107.779819,
+                        "y": 99.783559
+                    },
+                    "uuid": "f91e3df6-bf90-460a-b7d2-ca3451edb4de"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R2",
+                    "pos": {
+                        "x": 107.751654,
+                        "y": 99.119268
+                    },
+                    "uuid": "de672ba7-f1a0-4e53-ade2-a35b2bc053b3"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Datasheet' differs (PCB: '', Schematic: 'https://www.ti.com/lit/ds/symlink/tps7a20.pdf')",
+            "items": [
+                {
+                    "description": "Footprint U1",
+                    "pos": {
+                        "x": 107.1,
+                        "y": 103.1
+                    },
+                    "uuid": "f173e4d4-edce-47df-ac56-dd09bc057ed9"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C6",
+                    "pos": {
+                        "x": 94.790542,
+                        "y": 96.219142
+                    },
+                    "uuid": "30096917-d87b-4007-8f1f-ba6a35c7ddfb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C7",
+                    "pos": {
+                        "x": 104.860361,
+                        "y": 102.572334
+                    },
+                    "uuid": "b4fcf462-1891-43f6-8f9b-55f03335b3c6"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C8",
+                    "pos": {
+                        "x": 104.83673,
+                        "y": 97.369665
+                    },
+                    "uuid": "81157649-7e1f-4f5e-9445-6762789ccd56"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C9",
+                    "pos": {
+                        "x": 93.187739,
+                        "y": 95.713655
+                    },
+                    "uuid": "736bdd9e-989a-491b-9bb3-40ac74b58ec8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C10",
+                    "pos": {
+                        "x": 97.731819,
+                        "y": 105.30648
+                    },
+                    "uuid": "aaa78c38-f56f-43ea-bf49-ffe2a5dce8e3"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C11",
+                    "pos": {
+                        "x": 104.86049,
+                        "y": 103.973094
+                    },
+                    "uuid": "3ae771b5-eb07-4bdb-8136-7fa54880d84a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C12",
+                    "pos": {
+                        "x": 95.035047,
+                        "y": 100.513415
+                    },
+                    "uuid": "f7f5eb80-17d0-4255-a1d2-32c98212d496"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Light emitting diode')",
+            "items": [
+                {
+                    "description": "Footprint D1",
+                    "pos": {
+                        "x": 93.738474,
+                        "y": 100.366749
+                    },
+                    "uuid": "2cd1ac93-772c-4a26-b651-6be922a9abbd"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint FID1",
+                    "pos": {
+                        "x": 90.171303,
+                        "y": 103.136818
+                    },
+                    "uuid": "7b970f81-5f52-4d26-8dee-afae8e888dc3"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Fiducial Marker')",
+            "items": [
+                {
+                    "description": "Footprint FID1",
+                    "pos": {
+                        "x": 90.171303,
+                        "y": 103.136818
+                    },
+                    "uuid": "7b970f81-5f52-4d26-8dee-afae8e888dc3"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint FID2",
+                    "pos": {
+                        "x": 109.728001,
+                        "y": 96.377871
+                    },
+                    "uuid": "70fd746d-178c-4142-8a74-831dd7341e8f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Fiducial Marker')",
+            "items": [
+                {
+                    "description": "Footprint FID2",
+                    "pos": {
+                        "x": 109.728001,
+                        "y": 96.377871
+                    },
+                    "uuid": "70fd746d-178c-4142-8a74-831dd7341e8f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint FID3",
+                    "pos": {
+                        "x": 109.73343,
+                        "y": 103.106414
+                    },
+                    "uuid": "12efd611-9a2e-4a42-9956-d62b2598be45"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Fiducial Marker')",
+            "items": [
+                {
+                    "description": "Footprint FID3",
+                    "pos": {
+                        "x": 109.73343,
+                        "y": 103.106414
+                    },
+                    "uuid": "12efd611-9a2e-4a42-9956-d62b2598be45"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint FID4",
+                    "pos": {
+                        "x": 90.030865,
+                        "y": 95.75737
+                    },
+                    "uuid": "bafc0649-b130-49e9-8211-bbd4d442440b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Fiducial Marker')",
+            "items": [
+                {
+                    "description": "Footprint FID4",
+                    "pos": {
+                        "x": 90.030865,
+                        "y": 95.75737
+                    },
+                    "uuid": "bafc0649-b130-49e9-8211-bbd4d442440b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)')",
+            "items": [
+                {
+                    "description": "Footprint J3",
+                    "pos": {
+                        "x": 91.525757,
+                        "y": 100.445876
+                    },
+                    "uuid": "a8f8fed5-d27c-46e4-86cf-ac4c5aa483ae"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R3",
+                    "pos": {
+                        "x": 96.694641,
+                        "y": 105.011212
+                    },
+                    "uuid": "387e0152-5ef1-4f8e-a643-e710eae12905"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R4",
+                    "pos": {
+                        "x": 102.249208,
+                        "y": 94.610876
+                    },
+                    "uuid": "978a1252-88fc-42d5-ba68-933ce44c7271"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R5",
+                    "pos": {
+                        "x": 104.883937,
+                        "y": 101.148426
+                    },
+                    "uuid": "6b65e518-852b-4dab-8d2f-e31055f7e8c5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R6",
+                    "pos": {
+                        "x": 94.754074,
+                        "y": 101.533934
+                    },
+                    "uuid": "e136b4b8-1947-48f6-9fcd-053f9c43ce92"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Datasheet' differs (PCB: '', Schematic: 'https://www.st.com/resource/en/datasheet/stm32g431cb.pdf')",
+            "items": [
+                {
+                    "description": "Footprint U2",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 100.0
+                    },
+                    "uuid": "dc25eb23-9e28-482d-a063-58bd30ca6675"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C13",
+                    "pos": {
+                        "x": 102.265157,
+                        "y": 105.089298
+                    },
+                    "uuid": "65e1aa55-024d-41d8-842f-a7726de92ea7"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C14",
+                    "pos": {
+                        "x": 102.324338,
+                        "y": 103.611866
+                    },
+                    "uuid": "9a1e8c85-cfdc-4bdf-a2da-57ebd3c79960"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C15",
+                    "pos": {
+                        "x": 102.281414,
+                        "y": 102.178819
+                    },
+                    "uuid": "01976b1c-f52a-4119-b1ad-f0a83a0611e2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R7",
+                    "pos": {
+                        "x": 102.957042,
+                        "y": 105.200067
+                    },
+                    "uuid": "b16e9053-6d94-4965-a378-0df3170aa5bb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Datasheet' differs (PCB: '', Schematic: 'https://www.st.com/resource/en/datasheet/lsm6dsv16x.pdf')",
+            "items": [
+                {
+                    "description": "Footprint U3",
+                    "pos": {
+                        "x": 100.0,
+                        "y": 103.6
+                    },
+                    "uuid": "ae4c3a27-bc83-4f3a-9007-95a9db89b3b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C16",
+                    "pos": {
+                        "x": 93.092869,
+                        "y": 101.711907
+                    },
+                    "uuid": "d5ccd8b0-0266-418f-a81f-9eb1eff014f5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C17",
+                    "pos": {
+                        "x": 90.299925,
+                        "y": 98.645869
+                    },
+                    "uuid": "680c9ada-6fd9-421a-b5e7-12484f47ba46"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C18",
+                    "pos": {
+                        "x": 93.211976,
+                        "y": 102.607139
+                    },
+                    "uuid": "362b1a06-05c2-4a15-907f-08dba91db770"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C19",
+                    "pos": {
+                        "x": 97.255257,
+                        "y": 96.532658
+                    },
+                    "uuid": "6ca6cc19-0bf8-4bd6-813b-86360b48a026"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C20",
+                    "pos": {
+                        "x": 94.605661,
+                        "y": 102.136519
+                    },
+                    "uuid": "f8881f2a-16c5-4a1b-9687-7fe6c473894e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C21",
+                    "pos": {
+                        "x": 97.356293,
+                        "y": 98.389319
+                    },
+                    "uuid": "c39975f3-6f6a-47be-bfe1-5602286f9ebc"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C22",
+                    "pos": {
+                        "x": 93.224432,
+                        "y": 94.720788
+                    },
+                    "uuid": "9294d4c9-be05-4a1b-8292-c0ff4868455e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C23",
+                    "pos": {
+                        "x": 93.624196,
+                        "y": 93.836996
+                    },
+                    "uuid": "a72883fa-111b-46f6-9426-6e97649dd48b"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C24",
+                    "pos": {
+                        "x": 95.798796,
+                        "y": 93.421262
+                    },
+                    "uuid": "32bc0982-5716-4e61-bd40-e6e3a6264d1c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C25",
+                    "pos": {
+                        "x": 94.34954,
+                        "y": 92.233415
+                    },
+                    "uuid": "b6b93b4b-1437-4aae-b1b9-4d55d9f7097c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C26",
+                    "pos": {
+                        "x": 95.896332,
+                        "y": 91.555656
+                    },
+                    "uuid": "5034c4ec-34cf-4241-b72c-f5b8631f6d4d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Inductor')",
+            "items": [
+                {
+                    "description": "Footprint FB1",
+                    "pos": {
+                        "x": 95.559779,
+                        "y": 102.227326
+                    },
+                    "uuid": "9985bd4c-4761-43b5-8c05-c9d171bf6bf4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)')",
+            "items": [
+                {
+                    "description": "Footprint J2",
+                    "pos": {
+                        "x": 96.6,
+                        "y": 90.0
+                    },
+                    "uuid": "04dc21ab-bdfc-49b0-a80f-76e868c296fe"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Inductor')",
+            "items": [
+                {
+                    "description": "Footprint L1",
+                    "pos": {
+                        "x": 94.453885,
+                        "y": 94.744596
+                    },
+                    "uuid": "a4e50a40-8615-4053-8be6-8f8ee4b7e026"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Inductor')",
+            "items": [
+                {
+                    "description": "Footprint L2",
+                    "pos": {
+                        "x": 95.17923,
+                        "y": 93.141015
+                    },
+                    "uuid": "975a0728-1c1f-4e18-a63e-ad4d8476ba61"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Datasheet' differs (PCB: '', Schematic: 'https://www.semtech.com/products/wireless-rf/lora-connect/sx1280')",
+            "items": [
+                {
+                    "description": "Footprint U4",
+                    "pos": {
+                        "x": 93.8,
+                        "y": 98.2
+                    },
+                    "uuid": "946024c1-32fa-4fc9-bee1-3b045c56cb6a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Four pin crystal, GND on pins 2 and 4')",
+            "items": [
+                {
+                    "description": "Footprint Y1",
+                    "pos": {
+                        "x": 90.9,
+                        "y": 101.9
+                    },
+                    "uuid": "35c7aecb-3f0d-440c-9808-9938702972d9"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C27",
+                    "pos": {
+                        "x": 97.736696,
+                        "y": 107.309998
+                    },
+                    "uuid": "418639f2-05dd-434f-aae9-5f136a9bb30e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C28",
+                    "pos": {
+                        "x": 106.284014,
+                        "y": 110.382449
+                    },
+                    "uuid": "42fd22cb-36c6-4ec7-835e-c0f703b38bfd"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C29",
+                    "pos": {
+                        "x": 108.061886,
+                        "y": 110.408834
+                    },
+                    "uuid": "283733d2-8ebb-4db8-bf24-566d8e56628d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C30",
+                    "pos": {
+                        "x": 106.591736,
+                        "y": 104.439733
+                    },
+                    "uuid": "5b0ca83a-31c8-406b-bfe8-72b823b75902"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C31",
+                    "pos": {
+                        "x": 108.96964,
+                        "y": 109.184402
+                    },
+                    "uuid": "4970119e-d50a-41ab-99f0-201a00a4d766"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C32",
+                    "pos": {
+                        "x": 109.257081,
+                        "y": 104.160667
+                    },
+                    "uuid": "5123ebaa-2589-4ec4-8109-3a4894d0004a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C33",
+                    "pos": {
+                        "x": 97.726241,
+                        "y": 108.68991
+                    },
+                    "uuid": "fae29d9a-8c87-4f70-9f63-def9b3a54fb2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint H1",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 113.0
+                    },
+                    "uuid": "1959dc49-8f6a-4e97-a591-a013e95fb345"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Mounting Hole without connection')",
+            "items": [
+                {
+                    "description": "Footprint H1",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 113.0
+                    },
+                    "uuid": "1959dc49-8f6a-4e97-a591-a013e95fb345"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)')",
+            "items": [
+                {
+                    "description": "Footprint J11",
+                    "pos": {
+                        "x": 110.3,
+                        "y": 106.87
+                    },
+                    "uuid": "e13b1ab9-386d-4601-bda7-0feb68e8df01"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R9",
+                    "pos": {
+                        "x": 104.165727,
+                        "y": 106.39626
+                    },
+                    "uuid": "a0174884-6a23-40b7-8b52-5813d366319a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R10",
+                    "pos": {
+                        "x": 104.174188,
+                        "y": 105.714025
+                    },
+                    "uuid": "10bd5634-4552-48bc-b3a6-556e2f9800b4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R11",
+                    "pos": {
+                        "x": 104.15,
+                        "y": 107.4
+                    },
+                    "uuid": "66382758-2165-4f5b-9345-3593336808d9"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R12",
+                    "pos": {
+                        "x": 104.209521,
+                        "y": 108.103314
+                    },
+                    "uuid": "23365035-ebf0-44f4-b18e-4e1e7cf79b96"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R13",
+                    "pos": {
+                        "x": 104.260605,
+                        "y": 108.795166
+                    },
+                    "uuid": "b83508b7-6505-4f8f-a3c5-46fae012855f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R14",
+                    "pos": {
+                        "x": 104.358573,
+                        "y": 109.511547
+                    },
+                    "uuid": "9c43f742-18e8-40ab-813a-4ee3a2fe3baf"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Datasheet' differs (PCB: '', Schematic: 'https://www.ti.com/lit/ds/symlink/drv8311.pdf')",
+            "items": [
+                {
+                    "description": "Footprint U11",
+                    "pos": {
+                        "x": 107.4,
+                        "y": 107.4
+                    },
+                    "uuid": "ec69d90a-34e0-4252-a2a2-19ed76c3efb6"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Datasheet' differs (PCB: '', Schematic: 'https://www.st.com/resource/en/datasheet/stm32g071gb.pdf')",
+            "items": [
+                {
+                    "description": "Footprint U21",
+                    "pos": {
+                        "x": 101.4,
+                        "y": 108.1
+                    },
+                    "uuid": "bfdac7b2-10f1-4484-8beb-781c65ce13ba"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C34",
+                    "pos": {
+                        "x": 99.238416,
+                        "y": 95.542019
+                    },
+                    "uuid": "fbafef10-9f06-4b1c-9b65-88b36cdc0d7e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C35",
+                    "pos": {
+                        "x": 106.284014,
+                        "y": 89.61755
+                    },
+                    "uuid": "b39247d1-b5a8-48a8-9206-d13a6e5ba28d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C36",
+                    "pos": {
+                        "x": 108.061886,
+                        "y": 89.591165
+                    },
+                    "uuid": "dd9d784c-f725-418b-b76d-731383256a8c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C37",
+                    "pos": {
+                        "x": 106.591736,
+                        "y": 95.560266
+                    },
+                    "uuid": "28451e94-e11d-478f-a520-a907e4b6f0a2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C38",
+                    "pos": {
+                        "x": 108.96964,
+                        "y": 90.815597
+                    },
+                    "uuid": "1ae42be7-5e65-4505-b876-8f725f49378a"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C39",
+                    "pos": {
+                        "x": 109.257081,
+                        "y": 95.839332
+                    },
+                    "uuid": "39dcbda3-93f9-481b-921e-a6aa03215f32"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C40",
+                    "pos": {
+                        "x": 100.612447,
+                        "y": 95.652709
+                    },
+                    "uuid": "31857b3f-52bc-4175-849a-9f27789ba36e"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint H2",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 87.0
+                    },
+                    "uuid": "01b0b6e3-8deb-4d94-a2d0-d0450aeb6b91"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Mounting Hole without connection')",
+            "items": [
+                {
+                    "description": "Footprint H2",
+                    "pos": {
+                        "x": 113.0,
+                        "y": 87.0
+                    },
+                    "uuid": "01b0b6e3-8deb-4d94-a2d0-d0450aeb6b91"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)')",
+            "items": [
+                {
+                    "description": "Footprint J12",
+                    "pos": {
+                        "x": 110.3,
+                        "y": 93.13
+                    },
+                    "uuid": "db52d070-b926-485d-ba80-064f393ea674"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R16",
+                    "pos": {
+                        "x": 104.165727,
+                        "y": 91.59626
+                    },
+                    "uuid": "2ba169db-5987-4c50-bc62-32742b73ddd1"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R17",
+                    "pos": {
+                        "x": 104.174188,
+                        "y": 90.914025
+                    },
+                    "uuid": "3d649417-2d60-4847-bf28-6e331ffe6805"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R18",
+                    "pos": {
+                        "x": 104.15,
+                        "y": 92.6
+                    },
+                    "uuid": "c6a6e963-f63c-4f8f-87a6-ae395bdd7e10"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R19",
+                    "pos": {
+                        "x": 104.209521,
+                        "y": 93.303314
+                    },
+                    "uuid": "adcf128a-956a-4c7f-9d14-fa0421de8c00"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R20",
+                    "pos": {
+                        "x": 104.260605,
+                        "y": 93.995166
+                    },
+                    "uuid": "d1d625c3-932b-4b33-847b-a61a945bbe99"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R21",
+                    "pos": {
+                        "x": 104.358573,
+                        "y": 94.711547
+                    },
+                    "uuid": "7be22641-6a3d-4c18-a18c-10b4164c7cca"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Datasheet' differs (PCB: '', Schematic: 'https://www.ti.com/lit/ds/symlink/drv8311.pdf')",
+            "items": [
+                {
+                    "description": "Footprint U12",
+                    "pos": {
+                        "x": 107.4,
+                        "y": 92.6
+                    },
+                    "uuid": "a817be89-2b46-4133-a4a7-301554a03e33"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Datasheet' differs (PCB: '', Schematic: 'https://www.st.com/resource/en/datasheet/stm32g071gb.pdf')",
+            "items": [
+                {
+                    "description": "Footprint U22",
+                    "pos": {
+                        "x": 101.4,
+                        "y": 91.9
+                    },
+                    "uuid": "69756d6e-ff4e-4cd2-8f8c-fc63be377011"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C41",
+                    "pos": {
+                        "x": 102.263303,
+                        "y": 107.309998
+                    },
+                    "uuid": "ef24b311-61da-43b9-920c-427af8331011"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C42",
+                    "pos": {
+                        "x": 93.715985,
+                        "y": 110.382449
+                    },
+                    "uuid": "ab7fe7ed-e578-431a-b0df-cdcf5fa7afeb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C43",
+                    "pos": {
+                        "x": 91.938113,
+                        "y": 110.408834
+                    },
+                    "uuid": "8658e6e1-9324-4fc6-b6c2-4cd779ad20c7"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C44",
+                    "pos": {
+                        "x": 93.408263,
+                        "y": 104.439733
+                    },
+                    "uuid": "abcc094e-5e76-414c-a930-3e1efca0ff11"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C45",
+                    "pos": {
+                        "x": 90.815597,
+                        "y": 108.96964
+                    },
+                    "uuid": "e8e13aec-0729-4e4c-9389-cf1631a5068f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C46",
+                    "pos": {
+                        "x": 90.742918,
+                        "y": 104.160667
+                    },
+                    "uuid": "e578171f-73bc-44bb-b240-fb0799bad029"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C47",
+                    "pos": {
+                        "x": 102.273758,
+                        "y": 108.68991
+                    },
+                    "uuid": "e24ef1e3-6cdd-4bd4-b98a-abf57cfa39d9"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint H3",
+                    "pos": {
+                        "x": 87.0,
+                        "y": 113.0
+                    },
+                    "uuid": "4b68302c-b560-461f-abc7-62df270fb349"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Mounting Hole without connection')",
+            "items": [
+                {
+                    "description": "Footprint H3",
+                    "pos": {
+                        "x": 87.0,
+                        "y": 113.0
+                    },
+                    "uuid": "4b68302c-b560-461f-abc7-62df270fb349"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)')",
+            "items": [
+                {
+                    "description": "Footprint J13",
+                    "pos": {
+                        "x": 89.7,
+                        "y": 106.87
+                    },
+                    "uuid": "eee9ab26-e16c-4b68-9ef5-40f64f7c1fdb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R23",
+                    "pos": {
+                        "x": 95.834272,
+                        "y": 106.39626
+                    },
+                    "uuid": "93948781-df00-4978-abe0-b3442ba2997c"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R24",
+                    "pos": {
+                        "x": 96.876042,
+                        "y": 106.192429
+                    },
+                    "uuid": "1a7c2ce8-fdc2-44d0-8544-cf06a4c83e38"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R25",
+                    "pos": {
+                        "x": 95.85,
+                        "y": 107.4
+                    },
+                    "uuid": "d732b403-ae9c-45bd-8693-6ab61f4afe46"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R26",
+                    "pos": {
+                        "x": 96.430478,
+                        "y": 108.103314
+                    },
+                    "uuid": "ba4519fa-916d-412b-a12e-390e46a8e3f4"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R27",
+                    "pos": {
+                        "x": 95.324478,
+                        "y": 108.602807
+                    },
+                    "uuid": "c0172a84-493c-4766-a7d6-4db0f2dbd4b5"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R28",
+                    "pos": {
+                        "x": 94.63253,
+                        "y": 108.572132
+                    },
+                    "uuid": "6a1aa55f-148c-49cd-bf1e-de87dbf7eee2"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Datasheet' differs (PCB: '', Schematic: 'https://www.ti.com/lit/ds/symlink/drv8311.pdf')",
+            "items": [
+                {
+                    "description": "Footprint U13",
+                    "pos": {
+                        "x": 92.6,
+                        "y": 107.4
+                    },
+                    "uuid": "1c981f86-412b-41d6-8f70-81ee705eac60"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Datasheet' differs (PCB: '', Schematic: 'https://www.st.com/resource/en/datasheet/stm32g071gb.pdf')",
+            "items": [
+                {
+                    "description": "Footprint U23",
+                    "pos": {
+                        "x": 98.6,
+                        "y": 108.1
+                    },
+                    "uuid": "43b2a689-a562-4e41-a9d8-719c674ab8f8"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C48",
+                    "pos": {
+                        "x": 102.263303,
+                        "y": 92.690001
+                    },
+                    "uuid": "1644eece-71a3-41d7-828a-bbfb16524b7f"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C49",
+                    "pos": {
+                        "x": 93.715985,
+                        "y": 89.61755
+                    },
+                    "uuid": "3609daba-bac4-40fa-a7d7-d3c2acd554fe"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C50",
+                    "pos": {
+                        "x": 91.938113,
+                        "y": 89.591165
+                    },
+                    "uuid": "203be0d9-d10d-43a5-9078-6175dd12d373"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C51",
+                    "pos": {
+                        "x": 91.597182,
+                        "y": 95.694295
+                    },
+                    "uuid": "7e60ae70-0c4f-4976-8e56-acdb9c0c79cb"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C52",
+                    "pos": {
+                        "x": 90.815597,
+                        "y": 91.030359
+                    },
+                    "uuid": "c7737151-8413-412a-9b5a-c5fd0612a789"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C53",
+                    "pos": {
+                        "x": 90.70148,
+                        "y": 96.640866
+                    },
+                    "uuid": "03cd5bae-16c1-4572-ba3d-ca5c066dbe74"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Unpolarized capacitor')",
+            "items": [
+                {
+                    "description": "Footprint C54",
+                    "pos": {
+                        "x": 102.273758,
+                        "y": 91.310089
+                    },
+                    "uuid": "d1b79be2-8f26-490b-b19c-5138fb7f2329"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Footprint attributes don't match symbol: 'Exclude from bill of materials' settings differ",
+            "items": [
+                {
+                    "description": "Footprint H4",
+                    "pos": {
+                        "x": 87.0,
+                        "y": 87.0
+                    },
+                    "uuid": "dea38301-31bf-483e-b3e4-ca41d472aa80"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Mounting Hole without connection')",
+            "items": [
+                {
+                    "description": "Footprint H4",
+                    "pos": {
+                        "x": 87.0,
+                        "y": 87.0
+                    },
+                    "uuid": "dea38301-31bf-483e-b3e4-ca41d472aa80"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)')",
+            "items": [
+                {
+                    "description": "Footprint J14",
+                    "pos": {
+                        "x": 89.7,
+                        "y": 93.13
+                    },
+                    "uuid": "b9feea87-fd17-425e-a565-5910318cdbc7"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R30",
+                    "pos": {
+                        "x": 97.8,
+                        "y": 94.85
+                    },
+                    "uuid": "5c704377-2e4f-470a-bad4-391a435ec458"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R31",
+                    "pos": {
+                        "x": 97.15,
+                        "y": 94.85
+                    },
+                    "uuid": "a98c69f7-f640-442d-9abb-10319b369a13"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R32",
+                    "pos": {
+                        "x": 97.8,
+                        "y": 93.15
+                    },
+                    "uuid": "9696fff4-8db8-45a7-a5b5-25b20d400ecc"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R33",
+                    "pos": {
+                        "x": 97.15,
+                        "y": 93.15
+                    },
+                    "uuid": "ab9e60fc-1031-4fad-bd25-ee4b5db6b728"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R34",
+                    "pos": {
+                        "x": 97.8,
+                        "y": 91.45
+                    },
+                    "uuid": "095885f1-6996-4a65-9766-c2fa4d59d132"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Description' differs (PCB: '', Schematic: 'Resistor')",
+            "items": [
+                {
+                    "description": "Footprint R35",
+                    "pos": {
+                        "x": 97.15,
+                        "y": 91.45
+                    },
+                    "uuid": "d145214e-2b38-4c5d-9f2e-f53f9fbfd9dd"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Datasheet' differs (PCB: '', Schematic: 'https://www.ti.com/lit/ds/symlink/drv8311.pdf')",
+            "items": [
+                {
+                    "description": "Footprint U14",
+                    "pos": {
+                        "x": 92.6,
+                        "y": 92.6
+                    },
+                    "uuid": "ca92612d-52d3-4681-8071-30025f76fd82"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        },
+        {
+            "description": "Field 'Datasheet' differs (PCB: '', Schematic: 'https://www.st.com/resource/en/datasheet/stm32g071gb.pdf')",
+            "items": [
+                {
+                    "description": "Footprint U24",
+                    "pos": {
+                        "x": 98.6,
+                        "y": 91.9
+                    },
+                    "uuid": "93d07d71-463b-45bd-b0f8-ff3790e07d2d"
+                }
+            ],
+            "severity": "warning",
+            "type": "footprint_symbol_field_mismatch"
+        }
+    ],
+    "source": "nanodrone.kicad_pcb",
+    "unconnected_items": [],
+    "violations": []
+}

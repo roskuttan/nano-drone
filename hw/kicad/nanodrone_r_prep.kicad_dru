@@ -1,0 +1,15 @@
+(version 1)
+# JLCPCB 6-layer standard process (via-in-pad POFV), EMC separation rules.
+(rule "phase_to_analog_tracks"
+  (constraint clearance (min 0.30mm))
+  (condition "A.NetClass == 'PHASE' && B.NetClass == 'ANALOG' && A.Type == 'Track' && B.Type == 'Track'"))
+(rule "phase_to_signal_tracks"
+  (constraint clearance (min 0.15mm))
+  (condition "A.NetClass == 'PHASE' && A.Type == 'Track' && B.Type == 'Track' && B.NetClass != 'PHASE' && B.NetClass != 'POWER'"))
+(rule "rf_isolation"
+  (constraint clearance (min 0.20mm))
+  (condition "A.NetClass == 'RF' && B.NetName != 'GND' && B.NetClass != 'RF'"))
+(rule "via_in_pad_small"
+  (constraint hole_size (min 0.15mm))
+  (constraint via_diameter (min 0.25mm))
+  (condition "A.Type == 'Via'"))

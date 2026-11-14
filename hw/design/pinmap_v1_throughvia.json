@@ -1,0 +1,385 @@
+{
+ "mcu": "STM32G474MEYx",
+ "rotation_deg": 180,
+ "timers": {
+  "1": "TIM8",
+  "2": "TIM1",
+  "3": "TIM4",
+  "4": "TIM5"
+ },
+ "adcs": {
+  "1": "ADC5",
+  "2": "ADC4",
+  "3": "ADC1",
+  "4": "ADC2"
+ },
+ "imu_spi": "SPI2",
+ "rf_spi": "SPI3",
+ "spare": [
+  "PC15",
+  "PC6",
+  "PE8"
+ ],
+ "pins": [
+  {
+   "net": "IMU_CS",
+   "pin": "PE12",
+   "ball": "E5",
+   "function": "GPIO"
+  },
+  {
+   "net": "IMU_INT1",
+   "pin": "PC4",
+   "ball": "E6",
+   "function": "GPIO in"
+  },
+  {
+   "net": "IMU_MISO",
+   "pin": "PA10",
+   "ball": "D3",
+   "function": "SPI2"
+  },
+  {
+   "net": "IMU_MOSI",
+   "pin": "PB15",
+   "ball": "E4",
+   "function": "SPI2"
+  },
+  {
+   "net": "IMU_SCK",
+   "pin": "PF1",
+   "ball": "F9",
+   "function": "SPI2"
+  },
+  {
+   "net": "LED",
+   "pin": "PE7",
+   "ball": "H5",
+   "function": "GPIO"
+  },
+  {
+   "net": "M1_BEMFA",
+   "pin": "PA8",
+   "ball": "D1",
+   "function": "ADC5"
+  },
+  {
+   "net": "M1_BEMFB",
+   "pin": "PD11",
+   "ball": "E2",
+   "function": "ADC5"
+  },
+  {
+   "net": "M1_BEMFC",
+   "pin": "PA9",
+   "ball": "D4",
+   "function": "ADC5"
+  },
+  {
+   "net": "M1_INHA",
+   "pin": "PA15",
+   "ball": "A2",
+   "function": "TIM8_CH1"
+  },
+  {
+   "net": "M1_INHB",
+   "pin": "PC8",
+   "ball": "C5",
+   "function": "TIM8_CH3"
+  },
+  {
+   "net": "M1_INHC",
+   "pin": "PC9",
+   "ball": "D2",
+   "function": "TIM8_CH4"
+  },
+  {
+   "net": "M1_INLA",
+   "pin": "PA12",
+   "ball": "C1",
+   "function": "GPIO"
+  },
+  {
+   "net": "M1_INLB",
+   "pin": "PC10",
+   "ball": "B3",
+   "function": "GPIO"
+  },
+  {
+   "net": "M1_INLC",
+   "pin": "PA11",
+   "ball": "C2",
+   "function": "GPIO"
+  },
+  {
+   "net": "M1_ISENSA",
+   "pin": "PD10",
+   "ball": "F2",
+   "function": "ADC5"
+  },
+  {
+   "net": "M1_ISENSB",
+   "pin": "PD9",
+   "ball": "F3",
+   "function": "ADC5"
+  },
+  {
+   "net": "M2_BEMFA",
+   "pin": "PD8",
+   "ball": "G1",
+   "function": "ADC4"
+  },
+  {
+   "net": "M2_BEMFB",
+   "pin": "PB14",
+   "ball": "G2",
+   "function": "ADC4"
+  },
+  {
+   "net": "M2_BEMFC",
+   "pin": "PE10",
+   "ball": "J4",
+   "function": "ADC4"
+  },
+  {
+   "net": "M2_INHA",
+   "pin": "PE11",
+   "ball": "H4",
+   "function": "TIM1_CH2"
+  },
+  {
+   "net": "M2_INHB",
+   "pin": "PE13",
+   "ball": "G4",
+   "function": "TIM1_CH3"
+  },
+  {
+   "net": "M2_INHC",
+   "pin": "PE14",
+   "ball": "J3",
+   "function": "TIM1_CH4"
+  },
+  {
+   "net": "M2_INLA",
+   "pin": "PB13",
+   "ball": "H1",
+   "function": "GPIO"
+  },
+  {
+   "net": "M2_INLB",
+   "pin": "PB11",
+   "ball": "H2",
+   "function": "GPIO"
+  },
+  {
+   "net": "M2_INLC",
+   "pin": "PB10",
+   "ball": "H3",
+   "function": "GPIO"
+  },
+  {
+   "net": "M2_ISENSA",
+   "pin": "PB12",
+   "ball": "G3",
+   "function": "ADC4"
+  },
+  {
+   "net": "M2_ISENSB",
+   "pin": "PE15",
+   "ball": "F4",
+   "function": "ADC4"
+  },
+  {
+   "net": "M3_BEMFA",
+   "pin": "PC1",
+   "ball": "C8",
+   "function": "ADC1"
+  },
+  {
+   "net": "M3_BEMFB",
+   "pin": "PF0",
+   "ball": "E9",
+   "function": "ADC1"
+  },
+  {
+   "net": "M3_BEMFC",
+   "pin": "PA0",
+   "ball": "D7",
+   "function": "ADC1"
+  },
+  {
+   "net": "M3_INHA",
+   "pin": "PB6",
+   "ball": "B6",
+   "function": "TIM4_CH1"
+  },
+  {
+   "net": "M3_INHB",
+   "pin": "PB7",
+   "ball": "C7",
+   "function": "TIM4_CH2"
+  },
+  {
+   "net": "M3_INHC",
+   "pin": "PB9",
+   "ball": "A7",
+   "function": "TIM4_CH4"
+  },
+  {
+   "net": "M3_INLA",
+   "pin": "PB5",
+   "ball": "A6",
+   "function": "GPIO"
+  },
+  {
+   "net": "M3_INLB",
+   "pin": "PD2",
+   "ball": "B5",
+   "function": "GPIO"
+  },
+  {
+   "net": "M3_INLC",
+   "pin": "PB4",
+   "ball": "C6",
+   "function": "GPIO"
+  },
+  {
+   "net": "M3_ISENSA",
+   "pin": "PC0",
+   "ball": "E8",
+   "function": "ADC1"
+  },
+  {
+   "net": "M3_ISENSB",
+   "pin": "PA1",
+   "ball": "E7",
+   "function": "ADC1"
+  },
+  {
+   "net": "M4_BEMFA",
+   "pin": "PC3",
+   "ball": "G9",
+   "function": "ADC2"
+  },
+  {
+   "net": "M4_BEMFB",
+   "pin": "PA7",
+   "ball": "J8",
+   "function": "ADC2"
+  },
+  {
+   "net": "M4_BEMFC",
+   "pin": "PC2",
+   "ball": "F8",
+   "function": "ADC2"
+  },
+  {
+   "net": "M4_INHA",
+   "pin": "PB2",
+   "ball": "J7",
+   "function": "TIM5_CH1"
+  },
+  {
+   "net": "M4_INHB",
+   "pin": "PA2",
+   "ball": "G8",
+   "function": "TIM5_CH3"
+  },
+  {
+   "net": "M4_INHC",
+   "pin": "PA3",
+   "ball": "H8",
+   "function": "TIM5_CH4"
+  },
+  {
+   "net": "M4_INLA",
+   "pin": "PB0",
+   "ball": "F6",
+   "function": "GPIO"
+  },
+  {
+   "net": "M4_INLB",
+   "pin": "PC5",
+   "ball": "H7",
+   "function": "GPIO"
+  },
+  {
+   "net": "M4_INLC",
+   "pin": "PB1",
+   "ball": "G6",
+   "function": "GPIO"
+  },
+  {
+   "net": "M4_ISENSA",
+   "pin": "PA5",
+   "ball": "F7",
+   "function": "ADC2"
+  },
+  {
+   "net": "M4_ISENSB",
+   "pin": "PA6",
+   "ball": "G7",
+   "function": "ADC2"
+  },
+  {
+   "net": "MOT_nFAULT",
+   "pin": "PE9",
+   "ball": "F5",
+   "function": "GPIO in"
+  },
+  {
+   "net": "MOT_nSLEEP",
+   "pin": "PC7",
+   "ball": "D5",
+   "function": "GPIO"
+  },
+  {
+   "net": "RF_BUSY",
+   "pin": "PC13",
+   "ball": "B8",
+   "function": "GPIO in"
+  },
+  {
+   "net": "RF_DIO1",
+   "pin": "PC14",
+   "ball": "C9",
+   "function": "GPIO in"
+  },
+  {
+   "net": "RF_MISO",
+   "pin": "PC11",
+   "ball": "C4",
+   "function": "SPI3"
+  },
+  {
+   "net": "RF_MOSI",
+   "pin": "PC12",
+   "ball": "A3",
+   "function": "SPI3"
+  },
+  {
+   "net": "RF_NRESET",
+   "pin": "PD0",
+   "ball": "B4",
+   "function": "GPIO"
+  },
+  {
+   "net": "RF_NSS",
+   "pin": "PD1",
+   "ball": "A4",
+   "function": "GPIO"
+  },
+  {
+   "net": "RF_SCK",
+   "pin": "PB3",
+   "ball": "A5",
+   "function": "SPI3"
+  },
+  {
+   "net": "VBAT_SENSE",
+   "pin": "PA4",
+   "ball": "D6",
+   "function": "ADC"
+  }
+ ]
+}

@@ -1,0 +1,30 @@
+# Python
+__pycache__/
+*.pyc
+hw/sim/.pylibs/
+
+# third-party binaries (download separately; see hw/README.md)
+hw/tools/*.jar
+
+# KiCad: backups, locks, local state, regenerable router/DRC intermediates
+*-backups/
+*.lck
+*.kicad_prl
+fp-info-cache
+*.bak
+hw/kicad/attempts/
+hw/kicad/*.dsn
+hw/kicad/*.ses
+hw/kicad/*.net
+hw/kicad/drc*.json
+hw/kicad/erc*.json
+
+# heavy generated media
+hw/output/mech/blender/
+*.log
+
+# stray scratch board at the root
+/x.kicad_*
+
+# scratch test boards
+hw/sim_post/_test_*

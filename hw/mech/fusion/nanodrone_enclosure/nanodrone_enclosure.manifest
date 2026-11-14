@@ -1,0 +1,10 @@
+{
+    "autodeskProduct": "Fusion",
+    "type": "script",
+    "author": "",
+    "description": {
+        "": "Nano drone 3D-printed enclosure: builds both shells around the board reference, checks fits, exports STL/STEP"
+    },
+    "supportedOS": "windows|mac",
+    "editEnabled": true
+}

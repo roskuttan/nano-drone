@@ -1,0 +1,68 @@
+{
+  "a_bemf": {
+    "12bit_table57_min_ts": {
+      "cycles": 19.5,
+      "ts_ns": 557.0,
+      "t_conv_us": 0.9142857142857143
+    },
+    "10bit_table57_min_ts": {
+      "cycles": 12.5,
+      "ts_ns": 357.0,
+      "t_conv_us": 0.6571428571428571
+    },
+    "model_ts_for_0.5LSB_Cext_0pF_ns": 489.64741185296333,
+    "model_ts_for_0.5LSB_Cext_100pF_ns": 3307.531882970743,
+    "model_ts_for_0.5LSB_Cext_1000pF_ns": 18725.956489122284,
+    "divider_node_tau_ns": 35.0,
+    "min_on_time_for_on_sampling_us": 2.789788482501844,
+    "min_duty_48kHz": 0.13390984716008852,
+    "min_duty_96kHz": 0.26781969432017705,
+    "pin_range_V": [
+      -0.4,
+      2.5749999999999997
+    ],
+    "pin_max_at_hotplug_peak_V": 2.915,
+    "neg_injection_uA_est": 20.000000000000004,
+    "alt_4k7_4k7_12bit_min_ts": {
+      "cycles": 12.5,
+      "ts_ns": 357.0
+    }
+  },
+  "b_csa": {
+    "gain_V_per_A": 0.25,
+    "mid_V": 1.5,
+    "range_A": [
+      -5.0,
+      5.0
+    ],
+    "lsb_mA": 2.9296875,
+    "offset_LSB": 23.893333333333334,
+    "direct_ts_for_0.5LSB_ns": 1639.309654827414,
+    "RC_100ohm_1.0nF_ts_ns": 306.4932466233117,
+    "RC_100ohm_1.0nF_fc_MHz": 1.5915494309189533,
+    "RC_220ohm_2.2nF_ts_ns": 1083.7618809404705,
+    "RC_220ohm_2.2nF_fc_MHz": 0.32883252704937055,
+    "RC_100ohm_2.2nF_ts_ns": 493.33666833416714,
+    "RC_100ohm_2.2nF_fc_MHz": 0.7234315595086152,
+    "note_ripple": "sample the continuously-ON low-side phase at the middle of the PWM on (or off) interval"
+  },
+  "c_vbat": {
+    "tau_ms": 0.5,
+    "fc_Hz": 318.30988618379064,
+    "kickback_LSB_fullscale": 0.2047897605119744,
+    "ripple_atten_48kHz_dB": -43.568013183440584,
+    "lsb_at_battery_mV": 1.46484375,
+    "range_V": 6.0,
+    "sampling_bias_mV_fs1k": 0.0375,
+    "sampling_bias_mV_fs10k": 0.375,
+    "ripple_at_adc_mVpp_from_443mVpp": 1.4688351990727702,
+    "t_99pct_ms": 2.302585092994046,
+    "accuracy_budget_mV_at_4V2": {
+      "divider_1pct_ratio": 21.0,
+      "VREF_LDO_1p5pct": 63.0,
+      "with_VREFINT_cal_(G071 VREFINT)": "~0.5-1% -> 20-40 mV"
+    },
+    "quiescent_drain_mA": 0.21749999999999997,
+    "days_to_drain_260mAh": 49.80842911877395
+  }
+}

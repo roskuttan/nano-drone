@@ -1,0 +1,92 @@
+{
+  "budget_mA": {
+    "STM32G431 FC @170 MHz": {
+      "typ": 35.0,
+      "worst": 56.0,
+      "src": "G474 DS12288 Table 21 p.90 proxy: 29.5 typ (+periph.), 56 max @125C"
+    },
+    "4x STM32G071 @64 MHz": {
+      "typ": 31.2,
+      "worst": 40.8,
+      "src": "DS12232 Table 25 p.59: 6.3 typ / 7.7 max + ADC/COMP/TIM ~1.5-2.5 mA (assumption)"
+    },
+    "SX1280": {
+      "typ": 12.0,
+      "worst": 48.0,
+      "src": "Table 3-5/3-8 x2 LDO-mode (s14.7.1): RX ~6 mA x2 typ, TX +12.5 dBm 24 mA x2 worst"
+    },
+    "LSM6DSV16X": {
+      "typ": 0.65,
+      "worst": 0.65,
+      "src": "DS13510 Table 4 p.14"
+    },
+    "4x DRV8311 CSAREF": {
+      "typ": 6.8,
+      "worst": 12.0,
+      "src": "DRV8311 s7.5 p.12 ICSAREF 1.7 typ / 3.0 max (ROC lists up to 7.5)"
+    },
+    "misc (LED, pull-ups, VDDA)": {
+      "typ": 3.0,
+      "worst": 6.0,
+      "src": "assumption"
+    }
+  },
+  "I_3V0_typ_A": 0.08865,
+  "I_3V0_worst_A": 0.16345,
+  "R_DO_ohm": 0.46666666666666673,
+  "VIN_min_regulation_typ_V": 3.04137,
+  "VIN_min_regulation_worst_V": 3.0762766666666668,
+  "ldo_dissipation_W_at_4V35_worst": 0.22065749999999995,
+  "ldo_Tj_rise_C_JEDEC": 36.65121074999999,
+  "sag": {
+    "Rbatt_25mOhm": {
+      "min_OCV_full_throttle_VM_ge_3V0": 3.325,
+      "min_OCV_punch_VM_ge_3V0": 3.525,
+      "min_OCV_punch_VM_ge_2V7(UVLO max)": 3.3,
+      "min_OCV_LDO_regulates_during_punch": 3.625,
+      "VM_punch_at_OCV3V6": 3.073848950071489,
+      "VM_full_at_OCV3V6": 3.2619056461231444,
+      "VM_hover_at_OCV3V45": 3.364197603108455,
+      "V3V0_min_punch_at_OCV3V45": 2.8784546363459986,
+      "V3V0_min_overall": 2.7593369892871746
+    },
+    "Rbatt_40mOhm": {
+      "min_OCV_full_throttle_VM_ge_3V0": 3.45,
+      "min_OCV_punch_VM_ge_3V0": 3.725,
+      "min_OCV_punch_VM_ge_2V7(UVLO max)": 3.325,
+      "min_OCV_LDO_regulates_during_punch": 3.85,
+      "VM_punch_at_OCV3V6": 2.9092997800166263,
+      "VM_full_at_OCV3V6": 3.1405930162219984,
+      "VM_hover_at_OCV3V45": 3.326443659100235,
+      "V3V0_min_punch_at_OCV3V45": 2.7235636538905004,
+      "V3V0_min_overall": 2.6141041944310404
+    },
+    "Rbatt_60mOhm": {
+      "min_OCV_full_throttle_VM_ge_3V0": 3.625,
+      "min_OCV_punch_VM_ge_3V0": 4.025,
+      "min_OCV_punch_VM_ge_2V7(UVLO max)": 3.575,
+      "min_OCV_LDO_regulates_during_punch": 4.15,
+      "VM_punch_at_OCV3V6": 2.7273592342649087,
+      "VM_full_at_OCV3V6": 2.9956570749439284,
+      "VM_hover_at_OCV3V45": 3.275112551230381,
+      "V3V0_min_punch_at_OCV3V45": 2.552302079793364,
+      "V3V0_min_overall": 2.4535215919884856
+    }
+  },
+  "thresholds": {
+    "DRV8311_VM_ROC_min": 3.0,
+    "DRV8311_UVLO_fall": [
+      2.5,
+      2.6,
+      2.7
+    ],
+    "SX1280_min": 1.8,
+    "IMU_min": 1.71,
+    "STM32_PDR_BOR0_fall_max": 1.69,
+    "STM32G071_BOR4_fall": [
+      2.7,
+      2.81,
+      2.9
+    ]
+  }
+}

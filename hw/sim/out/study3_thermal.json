@@ -1,0 +1,295 @@
+{
+  "assumptions": {
+    "cu_fill": {
+      "value": [
+        0.45,
+        0.9,
+        0.35,
+        0.75,
+        0.9,
+        0.45
+      ],
+      "range": null,
+      "note": "copper fill L1..L6 (L1/L6 parts+pours, L2/L5 GND planes, L3 signals, L4 VBAT/3V0 islands)"
+    },
+    "h_rad": {
+      "value": 8.0,
+      "range": null,
+      "note": "linearised radiation, emissivity 0.9 solder mask, ~60-90 C surface"
+    },
+    "h_still": {
+      "value": 12.0,
+      "range": [
+        8,
+        15
+      ],
+      "note": "natural convection, small horizontal plate"
+    },
+    "h_wash": {
+      "value": [
+        30.0,
+        80.0
+      ],
+      "range": null,
+      "note": "forced convection in prop downwash (user range; flat-plate laminar estimate 60-85 W/m2K at 5-9 m/s induced velocity)"
+    },
+    "area_factor": {
+      "value": 1.2,
+      "range": null,
+      "note": "component/edge surface-area enhancement"
+    },
+    "via_density": {
+      "value": 300000.0,
+      "range": null,
+      "note": "background through-via density 0.3 /mm^2 (GND stitching + signals)"
+    },
+    "n_via_pad": {
+      "value": 5,
+      "range": null,
+      "note": "thermal vias (0.2 mm) in each DRV8311 exposed pad (TI land pattern)"
+    },
+    "c_components": {
+      "value": 0.25,
+      "range": null,
+      "note": "lumped heat capacity of components (J/K)"
+    },
+    "t_amb": {
+      "value": 25.0,
+      "range": null,
+      "note": "ambient C (add 10 K for 35 C summer)"
+    },
+    "ocv_thermal": {
+      "value": 4.05,
+      "range": null,
+      "note": "battery OCV used for thermal cases (~1.5 min into flight)"
+    }
+  },
+  "driver_losses": {
+    "nominal (L 6 uH, RDS typ) | hover": {
+      "P_total_at_Tj100_W": 0.7783564624723701,
+      "P_cond_25C_W": 0.492209642488262,
+      "P_diode_W": 0.06634140604959203,
+      "P_sw_W": 0.03326957548475255,
+      "P_standby_W": 0.04340516396858771,
+      "I_bus_A": 0.48865849996984256,
+      "I_phase_rms_A": 1.074441325910478,
+      "I_torque_equiv_A": 0.9028242348305748,
+      "VM": 3.945923997144337,
+      "duty": 0.39745210446697254
+    },
+    "nominal (L 6 uH, RDS typ) | full": {
+      "P_total_at_Tj100_W": 2.267958819933593,
+      "P_cond_25C_W": 1.9092893010570573,
+      "P_diode_W": 0.08457296116427983,
+      "P_sw_W": 0.0,
+      "P_standby_W": 0.03909125381155126,
+      "I_bus_A": 2.439547963928469,
+      "I_phase_rms_A": 2.0746045023612365,
+      "I_torque_equiv_A": 2.500393212673732,
+      "VM": 3.5537503465046605,
+      "duty": 1.0
+    },
+    "worst (L 3 uH, RDS max) | hover": {
+      "P_total_at_Tj100_W": 1.5388071237597902,
+      "P_cond_25C_W": 1.1453339590842047,
+      "P_diode_W": 0.09841082307187829,
+      "P_sw_W": 0.0517979755578663,
+      "P_standby_W": 0.042777779943796744,
+      "I_bus_A": 0.776094082804943,
+      "I_phase_rms_A": 1.5176374236932477,
+      "I_torque_equiv_A": 0.902030860771562,
+      "VM": 3.888889085799704,
+      "duty": 0.41093312303577323
+    },
+    "worst (L 3 uH, RDS max) | full": {
+      "P_total_at_Tj100_W": 2.5034391214284333,
+      "P_cond_25C_W": 2.2320062032371766,
+      "P_diode_W": 0.03630431356940719,
+      "P_sw_W": 0.0,
+      "P_standby_W": 0.039014992787635885,
+      "I_bus_A": 2.483912749680281,
+      "I_phase_rms_A": 2.067623144518125,
+      "I_torque_equiv_A": 2.4617794631220127,
+      "VM": 3.546817526148717,
+      "duty": 1.0
+    },
+    "mitigated (L 6 uH, RDS typ, 96 kHz) | hover": {
+      "P_total_at_Tj100_W": 0.5708419043278203,
+      "P_cond_25C_W": 0.3087933822638604,
+      "P_diode_W": 0.08194876703882625,
+      "P_sw_W": 0.04285578961218224,
+      "P_standby_W": 0.04355847222796255,
+      "I_bus_A": 0.4065135086711349,
+      "I_phase_rms_A": 0.8574699137908358,
+      "I_torque_equiv_A": 0.9026903983825268,
+      "VM": 3.95986111163296,
+      "duty": 0.4597237260690349
+    },
+    "mitigated (L 6 uH, RDS typ, 96 kHz) | full": {
+      "P_total_at_Tj100_W": 2.267958819933593,
+      "P_cond_25C_W": 1.9092893010570573,
+      "P_diode_W": 0.08457296116427983,
+      "P_sw_W": 0.0,
+      "P_standby_W": 0.03909125381155126,
+      "I_bus_A": 2.439547963928469,
+      "I_phase_rms_A": 2.0746045023612365,
+      "I_torque_equiv_A": 2.500393212673732,
+      "VM": 3.5537503465046605,
+      "duty": 1.0
+    }
+  },
+  "ti_table_12_1_check_Tj100": {
+    "hover": {
+      "P_con": 0.31788572360899103,
+      "P_sw": 0.0192785263562413,
+      "P_diode": 0.03466845061749407,
+      "P_standby": 0.04340516396858771,
+      "total": 0.41523786455131406
+    },
+    "full": {
+      "P_con": 2.438266825014098,
+      "P_sw": 0.0,
+      "P_diode": 0.0,
+      "P_standby": 0.03909125381155126,
+      "total": 2.4773580788256493
+    }
+  },
+  "board_heat_capacity_J_per_K": 0.9751163999999999,
+  "steady_state": {
+    "nominal (L 6 uH, RDS typ) | hover | h=12": {
+      "Tj_max_C": 312.5220024398582,
+      "T_board_mean_C": 292.9917113763743,
+      "exceeds_TSD_180C_runaway": true,
+      "P_driver_W": 1.183487061322089
+    },
+    "nominal (L 6 uH, RDS typ) | hover | h=30": {
+      "Tj_max_C": 145.4084697680516,
+      "T_board_mean_C": 131.10616324991835,
+      "exceeds_TSD_180C_runaway": false,
+      "P_driver_W": 0.8645949095080446
+    },
+    "nominal (L 6 uH, RDS typ) | full | h=30": {
+      "Tj_max_C": 486.7576992172957,
+      "T_board_mean_C": 429.95443533426663,
+      "exceeds_TSD_180C_runaway": true,
+      "P_driver_W": 3.47955988361969
+    },
+    "nominal (L 6 uH, RDS typ) | hover | h=80": {
+      "Tj_max_C": 76.75023740564153,
+      "T_board_mean_C": 64.65288986003904,
+      "exceeds_TSD_180C_runaway": false,
+      "P_driver_W": 0.7336274282197518
+    },
+    "nominal (L 6 uH, RDS typ) | full | h=80": {
+      "Tj_max_C": 199.32503851856927,
+      "T_board_mean_C": 157.33705905632766,
+      "exceeds_TSD_180C_runaway": true,
+      "P_driver_W": 2.5789587223168393
+    },
+    "worst (L 3 uH, RDS max) | hover | h=12": {
+      "Tj_max_C": 841.6653265147554,
+      "T_board_mean_C": 784.2921111679593,
+      "exceeds_TSD_180C_runaway": true,
+      "P_driver_W": 3.520176543084977
+    },
+    "worst (L 3 uH, RDS max) | hover | h=30": {
+      "Tj_max_C": 299.9040577984907,
+      "T_board_mean_C": 265.9283840702489,
+      "exceeds_TSD_180C_runaway": true,
+      "P_driver_W": 2.0726370623542083
+    },
+    "worst (L 3 uH, RDS max) | full | h=30": {
+      "Tj_max_C": 493.66312566209217,
+      "T_board_mean_C": 436.00136597696456,
+      "exceeds_TSD_180C_runaway": true,
+      "P_driver_W": 3.532596214164153
+    },
+    "worst (L 3 uH, RDS max) | hover | h=80": {
+      "Tj_max_C": 134.90517944621138,
+      "T_board_mean_C": 108.22860333529299,
+      "exceeds_TSD_180C_runaway": false,
+      "P_driver_W": 1.6316498761877578
+    },
+    "worst (L 3 uH, RDS max) | full | h=80": {
+      "Tj_max_C": 213.49217855736137,
+      "T_board_mean_C": 167.9231149009792,
+      "exceeds_TSD_180C_runaway": true,
+      "P_driver_W": 2.8000210231231435
+    },
+    "mitigated (L 6 uH, RDS typ, 96 kHz) | hover | h=12": {
+      "Tj_max_C": 201.94930279819482,
+      "T_board_mean_C": 190.34146155937498,
+      "exceeds_TSD_180C_runaway": true,
+      "P_driver_W": 0.6978962351694403
+    },
+    "mitigated (L 6 uH, RDS typ, 96 kHz) | hover | h=30": {
+      "Tj_max_C": 109.00580898123789,
+      "T_board_mean_C": 99.3153459776428,
+      "exceeds_TSD_180C_runaway": false,
+      "P_driver_W": 0.5818171826563096
+    },
+    "mitigated (L 6 uH, RDS typ, 96 kHz) | full | h=30": {
+      "Tj_max_C": 486.7576992172957,
+      "T_board_mean_C": 429.95443533426663,
+      "exceeds_TSD_180C_runaway": true,
+      "P_driver_W": 3.47955988361969
+    },
+    "mitigated (L 6 uH, RDS typ, 96 kHz) | hover | h=80": {
+      "Tj_max_C": 63.10116945070052,
+      "T_board_mean_C": 54.404772040143676,
+      "exceeds_TSD_180C_runaway": false,
+      "P_driver_W": 0.5245169949436043
+    },
+    "mitigated (L 6 uH, RDS typ, 96 kHz) | full | h=80": {
+      "Tj_max_C": 199.32503851856927,
+      "T_board_mean_C": 157.33705905632766,
+      "exceeds_TSD_180C_runaway": true,
+      "P_driver_W": 2.5789587223168393
+    }
+  },
+  "bursts": {
+    "nominal (L 6 uH, RDS typ) | h=30": {
+      "Tj_start_C": 145.4084697680516,
+      "Tj_after_3s_C": 191.48003642215912,
+      "Tj_after_5s_C": 205.11288125454035,
+      "Tj_peak_C": 205.11288125454035,
+      "t_to_125C_s": 0.0
+    },
+    "nominal (L 6 uH, RDS typ) | h=80": {
+      "Tj_start_C": 76.75023740564153,
+      "Tj_after_3s_C": 119.09050508050527,
+      "Tj_after_5s_C": 129.87299992321408,
+      "Tj_peak_C": 129.87299992321408,
+      "t_to_125C_s": 4.099999999999993
+    },
+    "worst (L 3 uH, RDS max) | h=30": {
+      "Tj_start_C": 299.9040577984907,
+      "Tj_after_3s_C": 328.20090036917946,
+      "Tj_after_5s_C": 336.5686841900126,
+      "Tj_peak_C": 336.5686841900126,
+      "t_to_125C_s": 0.0
+    },
+    "worst (L 3 uH, RDS max) | h=80": {
+      "Tj_start_C": 134.90517944621138,
+      "Tj_after_3s_C": 162.62967879733742,
+      "Tj_after_5s_C": 169.66826924447776,
+      "Tj_peak_C": 169.66826924447776,
+      "t_to_125C_s": 0.0
+    },
+    "mitigated (L 6 uH, RDS typ, 96 kHz) | h=30": {
+      "Tj_start_C": 109.00580898123789,
+      "Tj_after_3s_C": 160.06388353962998,
+      "Tj_after_5s_C": 175.15060011878373,
+      "Tj_peak_C": 175.15060011878373,
+      "t_to_125C_s": 0.1
+    },
+    "mitigated (L 6 uH, RDS typ, 96 kHz) | h=80": {
+      "Tj_start_C": 63.10116945070052,
+      "Tj_after_3s_C": 110.2142229471682,
+      "Tj_after_5s_C": 122.19214950366975,
+      "Tj_peak_C": 122.19214950366975,
+      "t_to_125C_s": null
+    }
+  },
+  "global_time_constant_s_h30": 26.73016447368422
+}

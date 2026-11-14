@@ -1,0 +1,143 @@
+{
+  "validation": {
+    "W0.15_g0.15_t0": {
+      "FD": 55.438052700152205,
+      "closed_form_GCPW": 56.91041537946029,
+      "eeff_FD": 3.206944486651348,
+      "eeff_CF": 3.2490678390349257
+    },
+    "W0.20_g0.25_t0": {
+      "FD": 47.61147846770652,
+      "closed_form_GCPW": 49.64913792312565,
+      "eeff_FD": 3.3427535082912114,
+      "eeff_CF": 3.438888034476894
+    },
+    "microstrip_W0.18_t35_wide_gap": {
+      "FD_g1.5mm": 47.3286880008019,
+      "Hammerstad_Jensen": 47.51809298944441
+    },
+    "grid_convergence_W0.15_g0.15": {
+      "dmin3um": 49.6773574544706,
+      "dmin1.5um(default)": 49.79256075394473,
+      "dmin0.75um": 49.86731086799241
+    }
+  },
+  "width_table": [
+    {
+      "gap_mm": 0.1,
+      "W50_mm_bare": 0.13245579831020005,
+      "Z0_check": 50.161971386625225,
+      "eeff": 2.7388047909008826,
+      "Z0_with_mask_at_same_W": 44.70583943805093,
+      "W50_mm_with_mask": 0.09625113148244319,
+      "closed_form_t0_at_W": 58.73690567789793
+    },
+    {
+      "gap_mm": 0.125,
+      "W50_mm_bare": 0.1418737036017038,
+      "Z0_check": 50.147881247433844,
+      "eeff": 2.838027145919227,
+      "Z0_with_mask_at_same_W": 45.39213409386781,
+      "W50_mm_with_mask": 0.10992280089716609,
+      "closed_form_t0_at_W": 57.82853104926122
+    },
+    {
+      "gap_mm": 0.15,
+      "W50_mm_bare": 0.14788788550875664,
+      "Z0_check": 50.13860688237076,
+      "eeff": 2.907100640624028,
+      "Z0_with_mask_at_same_W": 45.80464741370507,
+      "W50_mm_with_mask": 0.11859006147778728,
+      "closed_form_t0_at_W": 57.358383452223165
+    },
+    {
+      "gap_mm": 0.2,
+      "W50_mm_bare": 0.15412828341333468,
+      "Z0_check": 50.12986363395761,
+      "eeff": 2.9908651803704522,
+      "Z0_with_mask_at_same_W": 46.21002081609212,
+      "W50_mm_with_mask": 0.12746675647779182,
+      "closed_form_t0_at_W": 57.16146009349177
+    },
+    {
+      "gap_mm": 0.25,
+      "W50_mm_bare": 0.1571585223626044,
+      "Z0_check": 50.13034320047479,
+      "eeff": 3.0362396708163972,
+      "Z0_with_mask_at_same_W": 46.37724184524397,
+      "W50_mm_with_mask": 0.13153874272203278,
+      "closed_form_t0_at_W": 57.29556205926079
+    },
+    {
+      "gap_mm": 0.3,
+      "W50_mm_bare": 0.15883445810366995,
+      "Z0_check": 50.12590873100877,
+      "eeff": 3.0625657799485206,
+      "Z0_with_mask_at_same_W": 46.447779854757655,
+      "W50_mm_with_mask": 0.13363841742733418,
+      "closed_form_t0_at_W": 57.52779600989107
+    }
+  ],
+  "recommended_sensitivity": {
+    "W_mm": 0.15,
+    "g_mm": 0.15,
+    "Z0_nominal": 49.79256075394473,
+    "Z0_mask": 45.518371157374155,
+    "Z0_h_minus10pct": 47.27226957595764,
+    "Z0_h_plus10pct": 52.093304316031826,
+    "Z0_W_minus20um_etch": 53.87939631583711,
+    "Z0_er_4.2": 51.00795500407492,
+    "Z0_er_4.6": 49.104078974838444
+  },
+  "matching_network": {
+    "ideal (lossless, no parasitics)": {
+      "IL_band_max_dB": 0.46263793218034416,
+      "IL_band_min_dB": 0.3478627165641106,
+      "RL_band_min_dB": 10.03266630651873,
+      "dissipated_pct_band_max": 0.18461025964346955,
+      "atten_2f0_4.9GHz_dB": 27.870221123199407,
+      "atten_3f0_7.35GHz_dB": 30.94487372368502,
+      "rel_2f0_dB": 27.468962112437982,
+      "rel_3f0_dB": 30.543614712923596,
+      "min_atten_4.8-5.0GHz_dB": 27.076895903156,
+      "min_atten_7.2-7.5GHz_dB": 30.48152873460934
+    },
+    "0402 parasitics, L Q=30, SRF 8 GHz": {
+      "IL_band_max_dB": 1.4106247317501888,
+      "IL_band_min_dB": 1.170839957063747,
+      "RL_band_min_dB": 8.720182699240363,
+      "dissipated_pct_band_max": 14.306331173130893,
+      "atten_2f0_4.9GHz_dB": 34.70896304897164,
+      "atten_3f0_7.35GHz_dB": 85.74618650121616,
+      "rel_2f0_dB": 33.42622293156882,
+      "rel_3f0_dB": 84.46344638381335,
+      "min_atten_4.8-5.0GHz_dB": 33.78674438891974,
+      "min_atten_7.2-7.5GHz_dB": 78.43954617958148
+    },
+    "0402 parasitics, L Q=60, SRF 8 GHz": {
+      "IL_band_max_dB": 1.1401633945063705,
+      "IL_band_min_dB": 0.9194402326531321,
+      "RL_band_min_dB": 8.288498063413392,
+      "dissipated_pct_band_max": 8.259540829515844,
+      "atten_2f0_4.9GHz_dB": 34.682444213214275,
+      "atten_3f0_7.35GHz_dB": 85.77871551694051,
+      "rel_2f0_dB": 33.65979489348633,
+      "rel_3f0_dB": 84.75606619721256,
+      "min_atten_4.8-5.0GHz_dB": 33.757113058337815,
+      "min_atten_7.2-7.5GHz_dB": 78.45894035788972
+    },
+    "0402 parasitics, L Q=30, SRF 6 GHz": {
+      "IL_band_max_dB": 1.7827443660690436,
+      "IL_band_min_dB": 1.475353419267008,
+      "RL_band_min_dB": 7.810010360144759,
+      "dissipated_pct_band_max": 17.10996240428343,
+      "atten_2f0_4.9GHz_dB": 39.39781322170035,
+      "atten_3f0_7.35GHz_dB": 75.01216482561227,
+      "rel_2f0_dB": 37.778992561138494,
+      "rel_3f0_dB": 73.39334416505041,
+      "min_atten_4.8-5.0GHz_dB": 37.902837873489396,
+      "min_atten_7.2-7.5GHz_dB": 70.56786838516014
+    }
+  },
+  "matching_note": "50-ohm source assumed at RFIO; the SX1280 PA optimum load and LNA input are not 50 ohm, so the real in-band match must be tuned on a VNA; the harmonic numbers are filter attenuation between 50-ohm terminations"
+}

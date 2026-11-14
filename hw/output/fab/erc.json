@@ -1,0 +1,77 @@
+{
+    "$schema": "https://schemas.kicad.org/erc.v1.json",
+    "coordinate_units": "mm",
+    "date": "2026-11-08T23:11:02",
+    "ignored_checks": [
+        {
+            "description": "Global label only appears once in the schematic",
+            "key": "single_global_label"
+        },
+        {
+            "description": "Four connection points are joined together",
+            "key": "four_way_junction"
+        },
+        {
+            "description": "SPICE model issue",
+            "key": "simulation_model_issue"
+        },
+        {
+            "description": "Assigned footprint doesn't match footprint filters",
+            "key": "footprint_filter"
+        }
+    ],
+    "included_severities": [
+        "error",
+        "warning",
+        "exclusion"
+    ],
+    "kicad_version": "10.0.6",
+    "sheets": [
+        {
+            "path": "/",
+            "uuid_path": "/5686952d-bcae-4921-822c-1b2dde3e76eb",
+            "violations": []
+        },
+        {
+            "path": "/Power/",
+            "uuid_path": "/5686952d-bcae-4921-822c-1b2dde3e76eb/c9c06133-2178-4a29-b37c-f84c955076b8",
+            "violations": []
+        },
+        {
+            "path": "/Flight controller STM32G431/",
+            "uuid_path": "/5686952d-bcae-4921-822c-1b2dde3e76eb/9ec2fe0d-b7a3-4d99-a5b6-b3588974958c",
+            "violations": []
+        },
+        {
+            "path": "/IMU LSM6DSV16X/",
+            "uuid_path": "/5686952d-bcae-4921-822c-1b2dde3e76eb/3e839c94-76cb-4ae8-a271-4567908f4788",
+            "violations": []
+        },
+        {
+            "path": "/Radio SX1280/",
+            "uuid_path": "/5686952d-bcae-4921-822c-1b2dde3e76eb/a217f1b4-8351-4310-8a11-664136d0b369",
+            "violations": []
+        },
+        {
+            "path": "/Motor 1 ESC/",
+            "uuid_path": "/5686952d-bcae-4921-822c-1b2dde3e76eb/dc9080c0-df3b-44f7-a223-514131be47eb",
+            "violations": []
+        },
+        {
+            "path": "/Motor 2 ESC/",
+            "uuid_path": "/5686952d-bcae-4921-822c-1b2dde3e76eb/a57c2fba-ffd0-46d8-8df4-72b5921d5cda",
+            "violations": []
+        },
+        {
+            "path": "/Motor 3 ESC/",
+            "uuid_path": "/5686952d-bcae-4921-822c-1b2dde3e76eb/9a711b3d-d413-4ddc-9439-55936340ba90",
+            "violations": []
+        },
+        {
+            "path": "/Motor 4 ESC/",
+            "uuid_path": "/5686952d-bcae-4921-822c-1b2dde3e76eb/a1409458-1e21-4dc4-9202-aacf45d9935c",
+            "violations": []
+        }
+    ],
+    "source": "nanodrone.kicad_sch"
+}

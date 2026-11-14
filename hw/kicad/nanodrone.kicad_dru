@@ -1,0 +1,17 @@
+(version 1)
+# JLCPCB 6-layer standard process (via-in-pad POFV), EMC separation rules.
+# When several custom rules match, KiCad applies the one that comes last in the file, so the specific
+# phase-to-analog rule must follow the general phase-to-signal rule.
+(rule "phase_to_signal_tracks"
+  (constraint clearance (min 0.15mm))
+  (condition "A.NetClass == 'PHASE' && A.Type == 'Track' && B.Type == 'Track' && B.NetClass != 'PHASE' && B.NetClass != 'POWER'"))
+(rule "rf_isolation"
+  (constraint clearance (min 0.20mm))
+  (condition "A.NetClass == 'RF' && B.NetName != 'GND' && B.NetClass != 'RF'"))
+(rule "via_in_pad_small"
+  (constraint hole_size (min 0.15mm))
+  (constraint via_diameter (min 0.25mm))
+  (condition "A.Type == 'Via'"))
+(rule "phase_to_analog_tracks"
+  (constraint clearance (min 0.20mm))
+  (condition "A.NetClass == 'PHASE' && B.NetClass == 'ANALOG' && A.Type == 'Track' && B.Type == 'Track' && !((A.NetName == 'M1_OUTA' && B.NetName == 'M1_BEMFA') || (A.NetName == 'M1_OUTB' && B.NetName == 'M1_BEMFB') || (A.NetName == 'M1_OUTC' && B.NetName == 'M1_BEMFC') || (A.NetName == 'M2_OUTA' && B.NetName == 'M2_BEMFA') || (A.NetName == 'M2_OUTB' && B.NetName == 'M2_BEMFB') || (A.NetName == 'M2_OUTC' && B.NetName == 'M2_BEMFC') || (A.NetName == 'M3_OUTA' && B.NetName == 'M3_BEMFA') || (A.NetName == 'M3_OUTB' && B.NetName == 'M3_BEMFB') || (A.NetName == 'M3_OUTC' && B.NetName == 'M3_BEMFC') || (A.NetName == 'M4_OUTA' && B.NetName == 'M4_BEMFA') || (A.NetName == 'M4_OUTB' && B.NetName == 'M4_BEMFB') || (A.NetName == 'M4_OUTC' && B.NetName == 'M4_BEMFC'))"))
